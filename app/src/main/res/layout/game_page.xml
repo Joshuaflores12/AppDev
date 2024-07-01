@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94bbe9"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+            <!-- Points Counter -->
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="What caused the end of World War 2 ?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Answer1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="230dp"
+        android:text="Atomic Bomb"
+        android:backgroundTint="@color/button_color_3"
+        android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Answer2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="230dp"
+        android:layout_marginStart="200dp"
+        android:backgroundTint="@color/button_color_2"
+        android:text="Battle of the Bulge"
+        android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/Answer3"
+        android:layout_width="158dp"
+        android:layout_height="81dp"
+        android:layout_alignTop="@id/Answer1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="@color/button_color_4"
+        android:text="Battle of Berlin"
+        android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Answer4"
+        android:layout_width="154dp"
+        android:layout_height="63dp"
+        android:layout_alignTop="@id/Answer1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="27dp"
+        android:text="Stalingrad"
+        android:textSize="19sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
